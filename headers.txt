@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Sat, 20 Sep 2025 15:43:10 GMT
+Content-Type: application/json
+Content-Length: 257
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
