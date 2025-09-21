@@ -1,11 +1,11 @@
-## cURL: A Developer’s Guide
+# cURL: A Developer’s Guide
 Introduction
 
 cURL (Client URL) is a powerful command line tool and library for transferring data using various protocols such as HTTP, HTTPS, FTP, and many more. It is widely used for interacting with APIs, downloading files, simulating browser requests, and automating web tasks.
 
 As a developer, understanding cURL in both command-line form and as a programming library (like in PHP) provides a strong foundation for working with the modern web.
 
-# Why Learn cURL?
+## Why Learn cURL?
 
 Test and debug APIs quickly.
 
@@ -17,7 +17,7 @@ Perform authentication and handle headers.
 
 Upload and download files.
 
-# Part 1: cURL on the Command Line
+## Part 1: cURL on the Command Line
 Basic GET Request
 curl https://httpbin.org/get
 
@@ -64,7 +64,7 @@ Debugging Requests
 curl -v https://httpbin.org/get
 curl -D headers.txt -o body.json https://httpbin.org/get
 
-# Part 2: cURL in PHP
+## Part 2: cURL in PHP
 
 The cURL library in PHP lets you make HTTP requests inside your applications.
 
@@ -116,6 +116,6 @@ PHP cURL: Best for embedding requests in web applications and automating tasks.
 
 Together, these two “worlds” of cURL make it a versatile tool in every developer’s toolkit.
 
-# Conclusion
+## Conclusion
 
 Mastering both the command line usage and PHP’s cURL functions opens the door to better API integrations, data handling, and web automation. Whether you are testing endpoints or building production systems, cURL remains one of the most reliable companions for developers.
