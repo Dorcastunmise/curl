@@ -1,15 +1,16 @@
 <?php
     #SERPs => Search Engine Results Pages.
-    $srch_str = "syssoft+consulting+limited";
-    $url = "https://www.google.com/search?q=$srch_str";
+    $srch_str = "about";
+    $url = "https://syssoftcons.net/$srch_str";
 
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_RETURNTRANSFER =>true,
         CURLOPT_URL => $url,
+        CURLOPT_RETURNTRANSFER =>true,
+        CURLOPT_HEADER =>true,       
         CURLOPT_FOLLOWLOCATION =>true,
-        CURLOPT_VERBOSE =>false,
+        CURLOPT_VERBOSE =>true,
         CURLOPT_SSL_VERIFYPEER =>false,
         CURLOPT_SSL_VERIFYHOST =>false,
         CURLOPT_USERAGENT =>"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0",
@@ -29,7 +30,7 @@
         echo "error: " . curl_error($curl);
     } else {
         $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-        echo "status = ". $status . "\n";
+        #echo "status = ". $status . "\n";
         echo $response;
     }
 
