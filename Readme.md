@@ -116,6 +116,6 @@ PHP cURL: Best for embedding requests in web applications and automating tasks.
 
 Together, these two “worlds” of cURL make it a versatile tool in every developer’s toolkit.
 
-## Conclusion
+### Conclusion
 
 Mastering both the command line usage and PHP’s cURL functions opens the door to better API integrations, data handling, and web automation. Whether you are testing endpoints or building production systems, cURL remains one of the most reliable companions for developers.
